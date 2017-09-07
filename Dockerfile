@@ -5,4 +5,4 @@ RUN apt-get update && \
     apt-get install -y php-memcache php-mysql php-gd php-curl php-mbstring php-bcmath php-xml \
     php-mcrypt php-zip php-json php-imagick && \
     rm -rf /var/lib/apt/lists/* && \
-    a2enmod rewrite && \
+    a2enmod rewrite
