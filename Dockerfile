@@ -8,4 +8,6 @@ RUN apt-get update && \
     php-mcrypt php-zip php-json php-imagick && \
     cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && \
     rm -rf /var/lib/apt/lists/* && \
-    a2enmod rewrite
+    a2enmod rewrite && \
+    a2enmod proxy && \
+    a2enmod proxy_http
